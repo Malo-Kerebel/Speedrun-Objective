@@ -14,4 +14,6 @@ In the files folder type :
 
 # Plan for the future
 
-Paste the results in a file to facilitate the impletation in streams overlay
+-Paste the results in a file to facilitate the impletation in streams overlay
+
+-Remove the __getattr__ from the output
