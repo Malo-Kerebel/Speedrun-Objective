@@ -11,3 +11,7 @@ in the files folder type :
 
 In the files folder type :
     python3 speedrun.py
+
+# Plan for the future
+
+Paste the results in a file to facilitate the impletation in streams overlay
