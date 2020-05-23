@@ -39,11 +39,27 @@ runs = game_runs[category.name].runs
 choice = 0
 
 print("Do you aim :\n1) a place\n2) a percentage\n")
-while (choice != 1 and choice !=2 ): 
+while (choice != 1 and choice != 2 and choice != 3): 
     choice = int(input())
 
 if (choice == 1):
     print ("you need to get below " + get_str_time(runs[int(input("Input the place you aim out of " + str(len(runs)) + " runs :\n"))]))
 elif(choice == 2):    
     print ("you need to get below " + get_str_time(runs[math.floor(0.01*len(runs)*int(input("Input the percentage you aim to get :\n")))]))
+elif(choice == 3):
+    player = input("Input which player time you aim\n")
+    current = ""
+    i = 0
+    print (runs[205]["run"].players[0].name)
+    print (runs[206]["run"].players[0].name)
+    print (runs[207]["run"].players[0].name)
+    print (runs[208]["run"].players[0].name)
+    while (player != current and i < len(runs) ):
+        current = runs[i]["run"].players[0].name
+        i += 1
+    
+    if (player == current):
+        print("you need to get below " + get_str_time(runs[i-1]))
+    else:
+        print ("The player you named wasn't found")
 
