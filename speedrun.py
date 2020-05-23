@@ -38,7 +38,7 @@ runs = game_runs[category.name].runs
 
 choice = 0
 
-print("Do you aim :\n1) a place\n2) a percentage\n")
+print("Do you aim :\n1) a place\n2) a percentage\n3) a player (experimental and slow feature)\n")
 while (choice != 1 and choice != 2 and choice != 3): 
     choice = int(input())
 
