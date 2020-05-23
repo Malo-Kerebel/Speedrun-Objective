@@ -1,6 +1,6 @@
 import math
 import srcomapi, srcomapi.datatypes as dt
-api = srcomapi.SpeedrunCom(); api.debug = 1
+api = srcomapi.SpeedrunCom(); api.debug = 0
 
 def get_str_time(run):
 
