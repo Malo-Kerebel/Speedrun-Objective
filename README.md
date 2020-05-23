@@ -16,6 +16,4 @@ In the files folder type :
 
 -Paste the results in a file to facilitate the impletation in streams overlay
 
--Remove the __getattr__ from the output
-
 -Handle incorrect input
