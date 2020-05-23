@@ -5,7 +5,7 @@ api = srcomapi.SpeedrunCom(); api.debug = 0
 def get_str_time(run):
 
     return str(math.floor(run["run"].times['primary_t'] // 60)) + 'm ' + str(math.floor(run["run"].times['primary_t'] % 60)) + 's ' + str(math.floor((run["run"].times['primary_t'] - math.floor(run["run"].times['primary_t']))*1000)+ 1 ) + 'ms'
-#I added the + 1 because python get the substraction wrong
+#I added the + 1 because python get the substraction wrong due to floating point imprecision
 
 name = input("Type the name of your game\n")
 
